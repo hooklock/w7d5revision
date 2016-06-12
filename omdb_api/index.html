@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Moovees</title>
+    <title>Moovies</title>
     <script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
     <script type="text/javascript" src="http://code.highcharts.com/highcharts-3d.js"></script>
     <script type="text/javascript" src="pieChart.js"></script>
-    <script type="text/javascript" src="lineChart.js"></script>
     <script type="text/javascript" src="barChart.js"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
+    Movie Title:
+    <form>
+      <input type="text" id="search" name="title" value="">
+      <!-- <input type="submit" id="submit" name="name" value="Submit"> -->
+    </form>
+
+    <h3>List of Movies</h3>
+
+    <ul id="movie-list"></ul>
+    <select id="drop-down" onchange="showMovie()"></select>
+
+    <p id="movie-title"></p>
+    <p id="movie-type"></p>
+    <p id="movie-year"></p>
+    <p id="movie-imdb"></p>
+
 
     <div id="pieChart"></div>
-
-    <div id="lineChart"></div>
 
     <div id="barChart"></div>
 
