@@ -50,7 +50,7 @@ function handleMovies(movies){
   dropDown.onchange = function(event){
     var dropDown = event.target;
     var index = dropDown.options[dropDown.selectedIndex].value;
-    console.log("Hello", movies[index]);
+    console.log(movies[index]);
     showDetails(movies[index]);
   };
 
